@@ -8,3 +8,5 @@ google-generativeai
 python-dotenv
 # Pretrained spaCy English model
 https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
+torch==2.1.0+cpu
+--find-links https://download.pytorch.org/whl/torch_stable.html
