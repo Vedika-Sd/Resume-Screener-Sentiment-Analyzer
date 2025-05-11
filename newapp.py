@@ -135,7 +135,6 @@ Then evaluate the match:
 - Give a Match Score out of 100
 - Explain your Reasoning
 - List any Missing Skills or Gaps
-- Suggest improvements
 
 Semantic Similarity Score (resume vs job): {sim_score:.2f}
 
@@ -151,7 +150,6 @@ Respond ONLY with a valid **raw JSON object** like:
   "Match Score": "",
   "Reasoning": "",
   "Missing Skills": [],
-  "Suggestions": ""
 }}
 
 Do NOT include any explanation or markdown formatting like ```json.
