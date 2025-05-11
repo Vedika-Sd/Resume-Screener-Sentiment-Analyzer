@@ -13,21 +13,18 @@ import google.generativeai as genai
 # Fetch the actual API key from secrets
 api_key = st.secrets["gemini_api_key"]
 
+# Check if key is present
+if not api_key:
+    st.error("Gemini API key not found. Please set it in your Streamlit secrets.")
+    st.stop()
+
 # Configure the genai client with the valid API key
 genai.configure(api_key=api_key)
-
 
 # Downloads
 nltk.download('punkt')
 nltk.download('vader_lexicon')
 
-# Configure Gemini API
-if not API_KEY:
-    st.error("Gemini API key not found. Please set GEMINI_API_KEY in your .env file.")
-    st.stop()
-genai.configure(api_key=API_KEY)
-
-# Load spaCy model
 # Load spaCy model
 try:
     nlp = spacy.load("en_core_web_sm")
