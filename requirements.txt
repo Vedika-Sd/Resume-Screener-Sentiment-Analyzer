@@ -6,5 +6,4 @@ sentence-transformers==2.2.2
 spacy==3.5.3
 torch==2.2.2
 google-generativeai
-numpy
-
+numpy>=1.26
