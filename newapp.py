@@ -9,10 +9,8 @@ import pdfplumber
 from nltk.tokenize import word_tokenize
 from sentence_transformers import SentenceTransformer, util
 import google.generativeai as genai
-from dotenv import load_dotenv
 
 # Load env variables
-load_dotenv()
 API_KEY = "GEMINI_API_KEY"
 
 # Downloads
