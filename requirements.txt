@@ -1,6 +1,6 @@
 streamlit
 nltk
-spacy
+spacy==3.8.5
 pdfplumber
 python-docx
 sentence-transformers
