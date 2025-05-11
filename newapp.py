@@ -10,9 +10,12 @@ from nltk.tokenize import word_tokenize
 from sentence_transformers import SentenceTransformer, util
 import google.generativeai as genai
 
-# Load env variables
-genai.configure(api_key=st.secrets["gemini_api_key"])
-API_KEY = "GEMINI_API_KEY"
+# Fetch the actual API key from secrets
+api_key = st.secrets["gemini_api_key"]
+
+# Configure the genai client with the valid API key
+genai.configure(api_key=api_key)
+
 
 # Downloads
 nltk.download('punkt')
@@ -179,7 +182,7 @@ def screen_resume_with_prompt(job_desc, resume_text):
 
 
 # ---------- Streamlit App ----------
-st.set_page_config(page_title="Unstop AI HR Assistant", layout="wide")
+st.set_page_config(page_title="Unstop AI HR Assistant",page_icon="💼", layout="wide")
 st.sidebar.title("Navigation")
 section = st.sidebar.radio("Go to", ["Home", "Resume Screening", "Employee Sentiment Analysis"])
 
