@@ -28,10 +28,11 @@ genai.configure(api_key=API_KEY)
 # Load spaCy model
 try:
     nlp = spacy.load("en_core_web_sm")
-except:
-    st.error("Error loading spaCy model. Try running: python -m spacy download en_core_web_sm")
-    st.stop()
-
+except OSError:
+    # Download the model if not found
+    spacy.cli.download("en_core_web_sm")
+    nlp = spacy.load("en_core_web_sm")
+    
 # Sentence Transformer model
 sbert_model = SentenceTransformer('paraphrase-MiniLM-L6-v2')
 
