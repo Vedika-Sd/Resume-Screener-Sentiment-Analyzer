@@ -1,9 +1,10 @@
-streamlit==1.41.1
-nltk==3.9.1
-spacy==3.5.3
-pdfplumber==0.11.6
-python-docx==1.1.2
+streamlit
+nltk
+pdfplumber
+python-docx
 sentence-transformers==2.2.2
-google-generativeai==0.8.5
+spacy==3.5.3
 torch==2.2.2
-numpy>=1.26
+google-generativeai
+numpy
+
