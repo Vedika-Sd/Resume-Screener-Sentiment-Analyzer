@@ -11,6 +11,7 @@ from sentence_transformers import SentenceTransformer, util
 import google.generativeai as genai
 
 # Load env variables
+genai.configure(api_key=st.secrets["gemini_api_key"])
 API_KEY = "GEMINI_API_KEY"
 
 # Downloads
