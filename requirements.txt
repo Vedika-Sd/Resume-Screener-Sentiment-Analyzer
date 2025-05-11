@@ -3,7 +3,9 @@ nltk
 pdfplumber
 python-docx
 sentence-transformers==2.2.2
-spacy==3.5.3
+spacy==3.7.2
+thinc==8.2.3
 torch==2.2.2
 google-generativeai
 numpy>=1.26
+
