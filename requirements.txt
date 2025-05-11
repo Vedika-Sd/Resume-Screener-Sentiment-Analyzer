@@ -7,4 +7,4 @@ sentence-transformers==2.2.2
 google-generativeai==0.8.5
 python-dotenv==1.0.1
 torch==2.2.2
-numpy>=1.23,<1.26
+numpy>=1.26
